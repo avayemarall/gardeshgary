@@ -5,18 +5,17 @@
   --foreground: #171717;
 }
 @font-face {
-  font-family: "Vazirmatn-Medium";
-  src: url("/font/Vazirmatn-Medium.woff2") format("woff2");
+  font-family: "Vazirmatn-Regular";
+  src: url("/font/Vazirmatn-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "KalamehWeb_Black";
-  src: url("/font/KalamehWeb_Black.woff2") format("woff2");
+  src: url("/public/font/KalamehWeb_Black.woff2") format("woff2");
 }
 * {
-  font-family: "Vazirmatn-Medium.woff2";
+  font-family: "Vazirmatn-Regular" !important;
 }
 @theme inline {
-
   --color-custom-white: #ffffff;
   --color-light-gray: #f5f5f5;
   --color-mid-gray: #a9a9a9;
@@ -36,6 +35,17 @@
   }
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-dark-blue);
+}
 body {
   direction: rtl;
+  color: var(--color-dark-gray);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-medium-blue) !important;
 }
