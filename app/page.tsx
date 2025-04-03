@@ -7,7 +7,7 @@ import DepartmentsList_home from "@/components/layout/departmentsList_home";
 export default function Home() {
  
   return (
-   <div className="flex flex-col gap-20 md:gap-40 w-full h-full pb-10">
+   <div className="flex flex-col gap-20 md:gap-40  w-full h-full pb-10">
    <Hero/>
    <DepartmentsList_home/>
    <Introduction/>

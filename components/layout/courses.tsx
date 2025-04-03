@@ -54,6 +54,7 @@ const Courses: React.FC<CoursesProps> = () => {
           
           "
           >
+            <Link href={"/departments/music-departments/sitar"}>
             <Image
               src={course.img}
               alt={course.title}
@@ -62,6 +63,7 @@ const Courses: React.FC<CoursesProps> = () => {
               sizes="100vw"
               className="w-full h-full object-cover rounded-xl shadow-lg shadow-mid-gray hover:shadow-xl transition-all duration-300 ease-in-out"
             />
+            </Link>
             <div className="absolute bottom-4 left-0 w-full rounded-xl flex items-center pr-5">
               <div className="text-medium-blue text-2xl font-bold">
                 {course.title}
