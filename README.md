@@ -1,22 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Course Platform Admin Panel
+
+This project is the admin panel for a course platform, built with Next.js 15, Ant Design v5, and Tailwind CSS v4.
+
+## Features
+
+- **Admin Authentication**: Secure login system for admin users
+- **Dashboard**: Overview of key metrics like users, courses, orders, and revenue
+- **User Management**: View and manage user accounts
+- **Course Management**: Create, edit, and delete courses
+- **Order Management**: Track and manage course orders
+- **Responsive Design**: Works on desktop and mobile devices
+
+## Technical Implementation
+
+- **Next.js App Router**: Modern application routing using the App Router pattern
+- **Ant Design v5**: Latest version of Ant Design for UI components with theme token system
+- **Modern Styling**: Pure Ant Design v5 styling with theme token system
+- **API Services**: Structured API service architecture with error handling
+- **Authentication**: Secure admin authentication with token-based access control
+- **Protected Routes**: Admin routes are protected with authentication guards
+
+## Styling Approach
+
+- **Ant Design Theme Tokens**: Used for consistent styling across components
+- **Dynamic Theming**: App adapts to Ant Design theme settings
+- **Component Styling**: Inline styles with theme tokens for dynamic theming
+- **Responsive Layout**: Adapts to different screen sizes for optimal user experience
+
+## Error Handling Improvements
+
+- User-friendly error messages based on HTTP status codes
+- Notification system for displaying errors and success messages
+- Centralized error handling utilities
+- Consistent approach to API response handling
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Access the admin panel at `http://localhost:3000/admin/login`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Environment Setup
+
+Make sure to configure your `.env` file with the following variables:
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+NEXT_PUBLIC_API_URL=your_api_base_url
+```
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
