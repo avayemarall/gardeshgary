@@ -18,6 +18,16 @@
   /* outline: solid 1px red; */
   font-family: "Vazirmatn-Regular" !important;
 }
+.ant-picker-dropdown {
+  max-width: 90vw !important;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.custom-datepicker-dropdown {
+  max-width: 90vw !important;
+  width: 90vw !important;
+  direction: rtl;
+}
 
 @theme inline {
   --color-cloud-white: #fdfdfd;

@@ -43,8 +43,20 @@ const Header: React.FC<HeaderProps> = () => {
       type: "divider",
     },
     {
-      key: "gallery",
-      label: "گالری تور ها",
+      key:"1",
+      label:"تور های ادبی"
+    },
+    {
+      key:"2",
+      label:"تور های قرهنکی"
+    },
+    {
+      key:"3",
+      label:"تور های زیارتی"
+    },
+    {
+      key:"4",
+      label:"تور های گردشی"
     },
   ]);
   const router = useRouter();
@@ -133,9 +145,10 @@ const Header: React.FC<HeaderProps> = () => {
             <ConfigProvider direction="rtl">
               <Popover
                 className="flex gap-2 items-center"
-                content={<Menu items={[]} />}
+                content={<Menu items={[{key:"1",label:"تور های ادبی"}]} />}
               >
-                <Link href={"/past-tours"}>گالری تور ها</Link>
+                
+                تور ها
                 {/* <DownOutlined className="w-3 h-3" /> */}
               </Popover>
             </ConfigProvider>

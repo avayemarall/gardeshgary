@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import '@ant-design/v5-patch-for-react-19';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
