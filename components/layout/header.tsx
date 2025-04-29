@@ -145,11 +145,17 @@ const Header: React.FC<HeaderProps> = () => {
             <ConfigProvider direction="rtl">
               <Popover
                 className="flex gap-2 items-center"
-                content={<Menu items={[{key:"1",label:"تور های ادبی"}]} />}
+                content={<Menu items={[
+                  {key:"1",label:"تور های ادبی",onClick: ()=> router.push("/tours/4")},
+                  {key:"2",label:"تور های فرهنگی",onClick: ()=> router.push("/tours/4")},
+                  {key:"3",label:"تور های زیارتی",onClick: ()=> router.push("/tours/4")},
+                  {key:"4",label:"تور های گردشی",onClick: ()=> router.push("/tours/4")},
+                
+                ]} />}
               >
                 
                 تور ها
-                {/* <DownOutlined className="w-3 h-3" /> */}
+                <DownOutlined className="w-3 h-3" /> 
               </Popover>
             </ConfigProvider>
             {/* <Link href={"/signup"}>ورود به سایت</Link> */}

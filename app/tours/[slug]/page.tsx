@@ -210,7 +210,7 @@ const Page: React.FC<PageProps> = ({ params }) => {
       />
       <div className="flex flex-col w-full lg:px-0 lg:w-[70%] gap-20 lg:text-xl lg:my-10">
         <div className="flex flex-col gap-2  w-full">
-          <h1 className="text-2xl lg:text-3xl mr-10 lg:mr-0">نام تور</h1>
+          <h1 className="text-2xl lg:text-3xl mr-10 lg:mr-0">تور ارگ کریم خان</h1>
           <p className="text-justify leading-[2] tracking-normal lg:w-full w-[80%] mx-auto [text-justify:inter-word]">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
             استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
