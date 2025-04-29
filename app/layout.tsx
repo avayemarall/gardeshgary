@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import '@ant-design/v5-patch-for-react-19';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body
-      className="bg-light-gray"
+      className="bg-cloud-white"
       >
         <Header />
         <main className="w-full pb-30 pt-8">

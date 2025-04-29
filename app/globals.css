@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f0f8ff;
+  --color-mid-blue: #4a90e2;
+  --foreground: hsl(0, 0%, 9%);
+  --br: #5b432c;
 }
 @font-face {
   font-family: "Vazirmatn-Regular";
@@ -13,17 +15,23 @@
   src: url("/public/font/KalamehWeb_Black.woff2") format("woff2");
 }
 * {
+  /* outline: solid 1px red; */
   font-family: "Vazirmatn-Regular" !important;
 }
+
 @theme inline {
-  --color-custom-white: #ffffff;
-  --color-light-gray: #f5f5f5;
-  --color-mid-gray: #a9a9a9;
-  --color-dark-gray: #333333;
-  --color-light-blue: #edfaffc1;
-  --color-medium-blue: #4a90e2;
-  --color-dark-blue: #003366;
-  --color-border-gray: #d3d3d3;
+  --color-cloud-white: #fdfdfd;
+  --color-deep-blue: #003f5c;
+  --color-mid-blue: #4a90e2;
+  --color-neutral-light: #edf2f7;
+  --color-golden-yellow: #ffc857;
+  --color-coral-red: #ff6b6b;
+  --color-charcoal: #333842;
+  --color-txt-secondary: #6f6f6f;
+  --color-seat-available: #38bdf8;      
+  --color-seat-selected: #86af48;  
+  --color-seat-reserved: #ff6b6b;       
+  --color-seat-unavailable: #333842;     
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -31,21 +39,59 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #edfaffc1;
-    --foreground: #ededed;
+    --foreground: #86af48;
   }
 }
 
 h1,
 h2,
-h3,
-h4 {
-  color: var(--color-dark-blue);
+h3 {
+  color: var(--color-deep-blue);
 }
+
 body {
   direction: rtl;
-  color: var(--color-dark-gray);
+  color: var(--color-charcoal);
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: var(--color-medium-blue) !important;
+  color: var(--color-mid-blue) !important;
+}
+
+.login-slider {
+  & .swiper-pagination {
+    background: rgba(255, 255, 255, 0.108);
+    backdrop-filter: blur(10px);
+    border-radius: 0;
+    padding: 22px 10px;
+    bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  & .swiper-pagination-bullet {
+    width: 30px !important;
+    height: 5px !important;
+    border-radius: 1rem !important;
+    background: #ccc !important;
+    opacity: 1 !important;
+    transition: background-color 0.3s ease;
+  }
+
+  & .swiper-pagination-bullet-active {
+    background: #0ea5e9 !important;
+    width: 30px !important;
+    height: 5px !important;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-slate-gray) !important;
+  opacity: .5 !important;
+}
+.stat-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
